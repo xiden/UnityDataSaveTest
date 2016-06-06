@@ -28,6 +28,7 @@ sysinfo.txt
 *.apk
 *.exe
 *.unitypackage
+/[Ww]indows/
 
 # OS generated
 Thumbs.db
