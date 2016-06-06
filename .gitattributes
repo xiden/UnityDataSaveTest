@@ -1,0 +1,4 @@
+* text=auto
+*.meta text eol=lf
+*.sln text eol=crlf
+*.csproj text eol=crlf
