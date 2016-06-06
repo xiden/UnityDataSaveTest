@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour {
 	/// 初期化時に保存してあるゲームデータから復元
 	/// </summary>
 	void Awake() {
-		Debug.Log("Start load game data");
+		Debug.Log("Start load game data from " + GameData.FilePath);
 		var gd = ClassSerializer.LoadObject<GameData>(GameData.FilePath, new GameData());
 		gd.RestoreGameObjects();
 		Debug.Log("End load game data");
@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour {
 	/// アプリ終了時に保存
 	/// </summary>
 	void OnApplicationQuit() {
-		Debug.Log("Start save game data");
+		Debug.Log("Start save game data to " + GameData.FilePath);
 		var gd = new GameData();
 		gd.StoreGameObjects();
 		ClassSerializer.SaveObject<GameData>(GameData.FilePath, gd);
