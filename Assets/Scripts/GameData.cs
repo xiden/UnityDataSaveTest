@@ -10,7 +10,7 @@ public class GameData {
 	static string _filePath = Application.persistentDataPath + "/data.dat";
 
 	/// <summary>
-	/// ゲームデータ保存先パス名
+	/// ゲームデータ保存先パス名、実行環境用のパスが返る
 	/// </summary>
 	public static string FilePath {
 		get {
